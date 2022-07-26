@@ -36,7 +36,17 @@
 
 <script>
 
-var clickcount, pagePath2, totalClicks, pagePath3, pagePath4, pagePicker;
+var clickcount, pagePath2, array, totalClicks, pagePath3, pagePath4, item, pagePicker;
+
+function getNumberOrString(value) {
+  // Convert a string value to a number if possible
+  let number_value = Number(value);
+  if (Number.isNaN(number_value)) {
+    return value
+  } else {
+    return number_value
+  }
+}
 
 // Describe this function...
 function displayPageP3a() {
@@ -59,7 +69,27 @@ function displayPageP3a() {
 }
 
 // Describe this function...
-function page2() {
+function displayPageP3b() {
+  if(--window.LoopTrap <= 0) throw "Infinite loop.";
+  let element_pic2 = document.getElementById('pic');
+  element_pic2.style.backgroundColor = '#ff0000';
+  let element_title22 = document.getElementById('title2');
+  element_title22.innerText = 'chapter 2';
+  let element_p12 = document.getElementById('p1');
+  element_p12.innerText = 'title of chapter p3b';
+  element_p12.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_p1a2 = document.getElementById('p1a');
+  element_p1a2.innerText = 'paragrath oneA ';
+  element_p1a2.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_p22 = document.getElementById('p2');
+  element_p22.innerText = 'paragrath two ';
+  element_p22.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_ptest2 = document.getElementById('ptest');
+  element_ptest2.innerText = 'page 3 b';
+}
+
+// Describe this function...
+function displayFrontC1() {
   if(--window.LoopTrap <= 0) throw "Infinite loop.";
   let element_PageTest = document.getElementById('PageTest');
   element_PageTest.style.backgroundColor = '#ffffcc';
@@ -67,18 +97,32 @@ function page2() {
   element_spacer.style.visibility = (false) ? 'visible' : 'hidden';
   let element_title = document.getElementById('title');
   element_title.innerText = 'THE TRAVELING BEAR';
-  let element_title22 = document.getElementById('title2');
-  element_title22.innerText = 'chapter 1';
-  let element_price = document.getElementById('price');
-  element_price.style.visibility = (false) ? 'visible' : 'hidden';
+  let element_pic3 = document.getElementById('pic');
+  element_pic3.setAttribute("src", 'https://media.sciencephoto.com/c0/40/78/10/c0407810-800px-wm.jpg');
+  let element_p13 = document.getElementById('p1');
+  element_p13.innerText = '--------------';
+  element_p13.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_p1a3 = document.getElementById('p1a');
+  element_p1a3.innerText = 'By';
+  element_p1a3.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_title23 = document.getElementById('title2');
+  element_title23.innerText = 'There and back again: stories of a traveling bear';
+  let element_p23 = document.getElementById('p2');
+  element_p23.innerText = 'MR BEAR';
+  element_p23.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_price2 = document.getElementById('price2');
+  element_price2.innerText = '£9.99';
   let element_spacer2 = document.getElementById('spacer2');
   element_spacer2.style.visibility = (false) ? 'visible' : 'hidden';
   let element_spacer3 = document.getElementById('spacer3');
   element_spacer3.style.visibility = (false) ? 'visible' : 'hidden';
+  let element_ptest3 = document.getElementById('ptest');
+  element_ptest3.innerText = 'front cover (page 1)';
+  element_ptest3.style.visibility = (true) ? 'visible' : 'hidden';
 }
 
 // Describe this function...
-function displayFrontC1() {
+function page2() {
   if(--window.LoopTrap <= 0) throw "Infinite loop.";
   let element_PageTest2 = document.getElementById('PageTest');
   element_PageTest2.style.backgroundColor = '#ffffcc';
@@ -86,57 +130,25 @@ function displayFrontC1() {
   element_spacer4.style.visibility = (false) ? 'visible' : 'hidden';
   let element_title3 = document.getElementById('title');
   element_title3.innerText = 'THE TRAVELING BEAR';
-  let element_pic2 = document.getElementById('pic');
-  element_pic2.setAttribute("src", 'https://media.sciencephoto.com/c0/40/78/10/c0407810-800px-wm.jpg');
-  let element_p12 = document.getElementById('p1');
-  element_p12.innerText = '--------------';
-  element_p12.style.visibility = (true) ? 'visible' : 'hidden';
-  let element_p1a2 = document.getElementById('p1a');
-  element_p1a2.innerText = 'By';
-  element_p1a2.style.visibility = (true) ? 'visible' : 'hidden';
-  let element_title23 = document.getElementById('title2');
-  element_title23.innerText = 'There and back again: stories of a traveling bear';
-  let element_p22 = document.getElementById('p2');
-  element_p22.innerText = 'MR BEAR';
-  element_p22.style.visibility = (true) ? 'visible' : 'hidden';
-  let element_price2 = document.getElementById('price2');
-  element_price2.innerText = '£9.99';
+  let element_title24 = document.getElementById('title2');
+  element_title24.innerText = 'chapter 1';
+  let element_price = document.getElementById('price');
+  element_price.style.visibility = (false) ? 'visible' : 'hidden';
   let element_spacer22 = document.getElementById('spacer2');
   element_spacer22.style.visibility = (false) ? 'visible' : 'hidden';
   let element_spacer32 = document.getElementById('spacer3');
   element_spacer32.style.visibility = (false) ? 'visible' : 'hidden';
-  let element_ptest2 = document.getElementById('ptest');
-  element_ptest2.innerText = 'front cover (page 1)';
-  element_ptest2.style.visibility = (true) ? 'visible' : 'hidden';
 }
 
 // Describe this function...
-function displayPageP3b() {
-  if(--window.LoopTrap <= 0) throw "Infinite loop.";
-  let element_pic3 = document.getElementById('pic');
-  element_pic3.style.backgroundColor = '#ff0000';
-  let element_title24 = document.getElementById('title2');
-  element_title24.innerText = 'chapter 2';
-  let element_p13 = document.getElementById('p1');
-  element_p13.innerText = 'title of chapter p3b';
-  element_p13.style.visibility = (true) ? 'visible' : 'hidden';
-  let element_p1a3 = document.getElementById('p1a');
-  element_p1a3.innerText = 'paragrath oneA ';
-  element_p1a3.style.visibility = (true) ? 'visible' : 'hidden';
-  let element_p23 = document.getElementById('p2');
-  element_p23.innerText = 'paragrath two ';
-  element_p23.style.visibility = (true) ? 'visible' : 'hidden';
-  let element_ptest3 = document.getElementById('ptest');
-  element_ptest3.innerText = 'page 3 b';
-}
-
-// Describe this function...
-function displayPageP2a() {
+function displayPageP3c() {
   if(--window.LoopTrap <= 0) throw "Infinite loop.";
   let element_pic4 = document.getElementById('pic');
   element_pic4.style.backgroundColor = '#ff0000';
+  let element_title25 = document.getElementById('title2');
+  element_title25.innerText = 'chapter 2';
   let element_p14 = document.getElementById('p1');
-  element_p14.innerText = 'title of chapter p2a';
+  element_p14.innerText = 'title of chapter p3c';
   element_p14.style.visibility = (true) ? 'visible' : 'hidden';
   let element_p1a4 = document.getElementById('p1a');
   element_p1a4.innerText = 'paragrath oneA ';
@@ -145,19 +157,18 @@ function displayPageP2a() {
   element_p24.innerText = 'paragrath two ';
   element_p24.style.visibility = (true) ? 'visible' : 'hidden';
   let element_ptest4 = document.getElementById('ptest');
-  element_ptest4.innerText = ' page 2a';
-  element_ptest4.style.visibility = (true) ? 'visible' : 'hidden';
+  element_ptest4.innerText = 'page 3 c';
 }
 
 // Describe this function...
-function displayPageP3c() {
+function displayPageP4b() {
   if(--window.LoopTrap <= 0) throw "Infinite loop.";
   let element_pic5 = document.getElementById('pic');
   element_pic5.style.backgroundColor = '#ff0000';
-  let element_title25 = document.getElementById('title2');
-  element_title25.innerText = 'chapter 2';
+  let element_title26 = document.getElementById('title2');
+  element_title26.innerText = 'chapter 3';
   let element_p15 = document.getElementById('p1');
-  element_p15.innerText = 'title of chapter p3c';
+  element_p15.innerText = 'title of chapter p4b';
   element_p15.style.visibility = (true) ? 'visible' : 'hidden';
   let element_p1a5 = document.getElementById('p1a');
   element_p1a5.innerText = 'paragrath oneA ';
@@ -166,25 +177,26 @@ function displayPageP3c() {
   element_p25.innerText = 'paragrath two ';
   element_p25.style.visibility = (true) ? 'visible' : 'hidden';
   let element_ptest5 = document.getElementById('ptest');
-  element_ptest5.innerText = 'page 3 c';
+  element_ptest5.innerText = 'page 4 b';
 }
 
 // Describe this function...
-function displayBackC5() {
+function displayPageP2a() {
   if(--window.LoopTrap <= 0) throw "Infinite loop.";
-  displayFrontC1();
   let element_pic6 = document.getElementById('pic');
-  element_pic6.style.visibility = (false) ? 'visible' : 'hidden';
-  let element_title26 = document.getElementById('title2');
-  element_title26.innerText = 'click "NEW JOURNEY" for a new story!!! ';
-  element_title26.style.visibility = (true) ? 'visible' : 'hidden';
+  element_pic6.style.backgroundColor = '#ff0000';
+  let element_p16 = document.getElementById('p1');
+  element_p16.innerText = 'title of chapter p2a';
+  element_p16.style.visibility = (true) ? 'visible' : 'hidden';
   let element_p1a6 = document.getElementById('p1a');
-  element_p1a6.innerText = 'more stories from the traveling bear will be availble in next year';
-  element_p1a6.style.visibility = (false) ? 'visible' : 'hidden';
-  let element_price3 = document.getElementById('price');
-  element_price3.style.visibility = (true) ? 'visible' : 'hidden';
+  element_p1a6.innerText = 'paragrath oneA ';
+  element_p1a6.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_p26 = document.getElementById('p2');
+  element_p26.innerText = 'paragrath two ';
+  element_p26.style.visibility = (true) ? 'visible' : 'hidden';
   let element_ptest6 = document.getElementById('ptest');
-  element_ptest6.innerText = 'back cover (page 5)';
+  element_ptest6.innerText = ' page 2a';
+  element_ptest6.style.visibility = (true) ? 'visible' : 'hidden';
 }
 
 // Describe this function...
@@ -192,47 +204,35 @@ function displayPageP2b() {
   if(--window.LoopTrap <= 0) throw "Infinite loop.";
   let element_pic7 = document.getElementById('pic');
   element_pic7.style.backgroundColor = '#ff0000';
-  let element_p16 = document.getElementById('p1');
-  element_p16.innerText = 'title of chapter p2b';
-  element_p16.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_p17 = document.getElementById('p1');
+  element_p17.innerText = 'title of chapter p2b';
+  element_p17.style.visibility = (true) ? 'visible' : 'hidden';
   let element_p1a7 = document.getElementById('p1a');
   element_p1a7.innerText = 'paragrath oneA ';
   element_p1a7.style.visibility = (true) ? 'visible' : 'hidden';
-  let element_p26 = document.getElementById('p2');
-  element_p26.innerText = 'paragrath two ';
-  element_p26.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_p27 = document.getElementById('p2');
+  element_p27.innerText = 'paragrath two ';
+  element_p27.style.visibility = (true) ? 'visible' : 'hidden';
   let element_ptest7 = document.getElementById('ptest');
   element_ptest7.innerText = 'page 2 b';
 }
 
 // Describe this function...
-function displayPageP4b() {
+function displayBackC5() {
   if(--window.LoopTrap <= 0) throw "Infinite loop.";
-  let element_pic8 = document.getElementById('pic');
-  element_pic8.style.backgroundColor = '#ff0000';
+  displayFrontC1();
+  let element_pic9 = document.getElementById('pic');
+  element_pic9.style.visibility = (false) ? 'visible' : 'hidden';
   let element_title27 = document.getElementById('title2');
-  element_title27.innerText = 'chapter 3';
-  let element_p17 = document.getElementById('p1');
-  element_p17.innerText = 'title of chapter p4b';
-  element_p17.style.visibility = (true) ? 'visible' : 'hidden';
+  element_title27.innerText = 'click "NEW JOURNEY" for a new story!!! ';
+  element_title27.style.visibility = (true) ? 'visible' : 'hidden';
   let element_p1a8 = document.getElementById('p1a');
-  element_p1a8.innerText = 'paragrath oneA ';
-  element_p1a8.style.visibility = (true) ? 'visible' : 'hidden';
-  let element_p27 = document.getElementById('p2');
-  element_p27.innerText = 'paragrath two ';
-  element_p27.style.visibility = (true) ? 'visible' : 'hidden';
+  element_p1a8.innerText = 'more stories from the traveling bear will be availble in next year';
+  element_p1a8.style.visibility = (false) ? 'visible' : 'hidden';
+  let element_price3 = document.getElementById('price');
+  element_price3.style.visibility = (true) ? 'visible' : 'hidden';
   let element_ptest8 = document.getElementById('ptest');
-  element_ptest8.innerText = 'page 4 b';
-}
-
-function randomInt(n) {
-  // Return a random number from in [0, n[
-  return Math.floor(Math.random()*n);
-}
-
-function randomMember(arr) {
-  // Return a random member of the array
-  return arr[randomInt(arr.length)]
+  element_ptest8.innerText = 'back cover (page 5)';
 }
 
 // Describe this function...
@@ -255,13 +255,58 @@ function displayPageP4a() {
   element_ptest9.innerText = 'page 4 a';
 }
 
+function randomInt(n) {
+  // Return a random number from in [0, n[
+  return Math.floor(Math.random()*n);
+}
 
+function randomMember(arr) {
+  // Return a random member of the array
+  return arr[randomInt(arr.length)]
+}
+
+
+
+document.getElementById('addComment').addEventListener('click', (event) => {
+  array.push(getNumberOrString(document.getElementById('addtext').value));
+  let element_comment_list = document.getElementById('comment-list');
+  element_comment_list.replaceChildren();
+  array.forEach((item) => {
+    let new_li = document.createElement('li');
+    new_li.innerText = item;
+
+    element_comment_list.appendChild(new_li);
+  });
+
+});
+
+document.getElementById('remComment').addEventListener('click', (event) => {
+  array.pop();
+  let element_comment_list2 = document.getElementById('comment-list');
+  element_comment_list2.replaceChildren();
+  array.forEach((item) => {
+    let new_li2 = document.createElement('li');
+    new_li2.innerText = item;
+
+    element_comment_list2.appendChild(new_li2);
+  });
+
+});
+
+document.getElementById('button3').addEventListener('click', (event) => {
+  clickcount = 0;
+  displayFrontC1();
+  let element_pic8 = document.getElementById('pic');
+  element_pic8.style.visibility = (true) ? 'visible' : 'hidden';
+
+});
 displayFrontC1();
 
 clickcount = 0;
 pagePath2 = ['page2a', 'page2b'];
 pagePath3 = ['page3a', 'page3b', 'page3c'];
 pagePath4 = ['page4a', 'page4b'];
+array = [];
 
 
 document.getElementById('button').addEventListener('click', (event) => {
@@ -272,8 +317,8 @@ document.getElementById('button').addEventListener('click', (event) => {
   element_button2.innerText = totalClicks;
   if (totalClicks >= 5) {
     displayFrontC1();
-    let element_pic9 = document.getElementById('pic');
-    element_pic9.style.visibility = (true) ? 'visible' : 'hidden';
+    let element_pic11 = document.getElementById('pic');
+    element_pic11.style.visibility = (true) ? 'visible' : 'hidden';
   } else {
     if (totalClicks == 4) {
       displayBackC5();
@@ -304,14 +349,6 @@ document.getElementById('button').addEventListener('click', (event) => {
       }
     }
   }
-
-});
-
-document.getElementById('button3').addEventListener('click', (event) => {
-  clickcount = 0;
-  displayFrontC1();
-  let element_pic11 = document.getElementById('pic');
-  element_pic11.style.visibility = (true) ? 'visible' : 'hidden';
 
 });
 
