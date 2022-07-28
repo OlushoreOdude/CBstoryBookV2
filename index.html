@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <style>
 * {
@@ -13,11 +14,15 @@ body {
   background-image: url("https://images.unsplash.com/photo-1589496933738-f5c27bc146e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
 }
 
+/* background-image: url("https://www.creativity103.com/collections/Paper/rustic_paper.jpg")
+
 /* Header/Blog Title */
 .header {
   padding: 30px;
   text-align: center;
-  background: white;
+  background: ;
+  background-image: url("https://i0.wp.com/i.pinimg.com/originals/9a/59/6a/9a596af5bca6c16fef8a56f5c44746dc.jpg?ssl=1");
+  color: white;
 }
 
 .header h1 {
@@ -69,7 +74,31 @@ body {
 .fakeimg {
   background-color: #aaa;
   width: 100%;
-  padding: 20px;
+  padding: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+
+
+}
+
+.fakeimg:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  text-decoration-line: underline;
+  cursor: pointer;
+  border-style: double double solid solid;};
+}
+
+
+.italic {
+  font-style: italic;
+  font-weight: normal;
+}
+
+.imgh {
+  
+  width: 100%;
+  padding: 10px;
 }
 
 /* Add a card effect for articles */
@@ -78,6 +107,48 @@ body {
   padding: 20px;
   margin-top: 20px;
   border-radius: 25px;
+}
+
+/* Add a card effect for articles */
+.card1 {
+  background-color: white;
+  padding: 10px;
+  margin-top: 20px;
+
+  
+}
+
+.card2 {
+  background-color: rgba(255,255,255 0.2);
+  padding: 10px;
+  margin-top: 10px;
+  color:  white;
+
+  
+}
+
+.card3 {
+  opacity: 0.8;
+  padding: 20px;
+  text-align: center;
+
+}
+
+.card3:hover{
+  opacity: 1;
+}
+
+.card4{
+  display: none;
+
+}
+
+#parCent {
+  /*padding: 10px;*/
+  /*margin-left: 30px;*/
+  padding-right: 15px;
+  padding-bottom: 0px;
+  padding-left: 30px;
 }
 
 /* Clear floats after the columns */
@@ -90,10 +161,86 @@ body {
 /* Footer */
 .footer {
   padding: 20px;
-  text-align: center;
+  text-align: left;
   background: #ddd;
   margin-top: 20px;
+  background-image: url("https://i0.wp.com/i.pinimg.com/originals/9a/59/6a/9a596af5bca6c16fef8a56f5c44746dc.jpg?ssl=1");
+  color: white;
   
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.button2 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+   background-color: #4CAF50;
+  color: white;
+}
+
+.button1:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+   background-color: #f44336;
+  color: white;
+}
+
+.button3 {
+  background-color: red; 
+  color: white; 
+  border: 2px solid #4CAF50;
+}
+
+.button3:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+   background-color: white;
+  color: red;
+}
+
+.scrollTextbox {
+    height: 100px;
+    width:100%;
+    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 110%;
+    color: darkred;
+    overflow:scroll;
+}
+.scrollTextbox2{
+  height: 150px;
+}
+
+
+input[type=text] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #555;
+  outline: none;
+}
+
+input[type=text]:focus {
+  background-color: lightblue;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -112,68 +259,457 @@ body {
   }
 }
 </style>
+
+   <script>
+     function todayDate(){
+        var d = new Date();
+        var n = d.getFullYear() + "  ";
+        return document.getElementById("date").innerHTML = n;
+      }
+
+var test = todayDate();
+var test2 = document.getElementById("date2").innerHTML = test;
+
+function alignCenter(){
+   let element_p1aA2 = document.getElementById('p1a');
+    element_p1aA2.style.textAlign = "center";
+
+}
+
+   </script>
+
 </head>
-<body>
+<body onload="todayDate();">
 
 <div class="header">
-  <h1>My Website</h1>
-  <p>Resize the browser window to see the effect.</p>
+  <h1>Mr Bear </h1>
+  <p>stories from the city</p>
 </div>
 
 <div class="topnav">
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#" style="float:right">Link</a>
+  <a href="#">Home</a>
+  <a href="#">Events</a>
+  <a href="#">Honey</a>
+  <a href="#" style="float:right">More</a>
 </div>
 
 <div class="row">
   <div class="leftcolumn">
-    <div class="card">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Dec 7, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    
+    <div class="card1" style="text-align:center" id="PageTest" >
+       <div> 
+      <p id="spacer"> spacer</p>
+      <h1 id="title"></h1>
+      <img id="pic" src="https://media.sciencephoto.com/c0/40/78/10/c0407810-800px-wm.jpg" width="60%" height="35%" /> 
+
+      <h1 id="title2"></h1>
+      <h2 id="p1"> test paragraph</h2>
+       </div>
+
+       <div id="parCent" style="text-align:left;" >
+      <p class="scrollTextbox" id="p1a"> test paragraph</p>
+      <p class="scrollTextbox scrollTextbox2" id="p2"> test paragraph 2</p>
+      </div>
+
+      <p id="spacer2"> spacer2 </p>
+
+      <p id="price"> RRP: <span id="price2"></span> </p>
+      <p style="text-align:center" id="ptest"> Page 0</p>
+      <p id="spacer3"> spacer3 </p>
     </div>
-    <div class="card">
-      <h2>buttons</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+    <div class="card2" style="text-align:center ">
+      <h2></h2>
+        <button class="button button2" id="button"> Start your journey </button> 
+        <button class="button button2" id="button3" > New journey </button>
     </div>
-    <div class="card">
-      <h2>comments</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+    <div class="card card4" style="text-align:right" id="pagesStatic">
+
+      <button  id="button2" > test click count</button>
     </div>
+   
+
   </div>
-  
+
   <div class="rightcolumn">
-    <div class="card">
+    <div class="card card3">
       <h2>About Me</h2>
-      <div class="fakeimg" style="height:100px;">Image</div>
+       <img class="imgh" src="https://i0.wp.com/i.pinimg.com/originals/9a/59/6a/9a596af5bca6c16fef8a56f5c44746dc.jpg?ssl=1" > 
+
       <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
     </div>
-    <div class="card">
-      <h3>other books </h3>
-      <div class="fakeimg"><p>book 1</p></div>
-      <div class="fakeimg"><p>book 2 </p></div>
-      <div class="fakeimg"><p>book 3 </p></div>
+    <div class="card card3">
+      <h3>More Books </h3>
+      <div class="fakeimg"><p>THE WONDERING BEAR: <br> <span class="italic" >The hive on the hill</span></p></div>
+      <div class="fakeimg"><p>THE WONDERING BEAR 2:<br> Return of the honey bees </p></div>
+      <div class="fakeimg"><p>THE WONDERING BEAR 3: <br> All the honey in the world. </p></div>
     </div>
-    <div class="card">
+    <div class="card card3">
       <h3>Follow Me</h3>
-      <p>Some text..</p>
+      <p>You can follow me on Pologram. and if you like fishing for Salmon, join me on sundays at Putney Bridge</p>
     </div>
   </div>
 </div>
 
+ <div class="card" id="comment">
+    <h3 style="text-align:center; text-decoration-line: underline;">What do you think? Can you find out how many different options the story has?</h3>
+    <p style="text-align:center " > Click through the story a few times and use the comment box to take a note of the different page paths, don't forget to read the story too :). we dont have a sever yet but you can print the page to save your comments ^_^ </p>
+
+
+    <input  type="text" id="addtext" placeholder="type comment here...">
+    <button class="button button1" id="addComment">Add your comment </button>
+    <button class="button button1" id="remComment">remove your comment </button>
+    <button class="button button3"  onclick="window.print()">Print page</button>
+    <ul id="comment-list"></ul>
+    </div>
+
 <div class="footer">
-  <h2>Footer</h2>
+
+
+<h2>TODAY's DATE: <em id="month"></em> <em id="this_day"></em> <em id="date"></em> </h2>
+<script>
+const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+const m = new Date();
+let month = months[m.getMonth()];
+document.getElementById("month").innerHTML = month;
+
+const d = new Date();
+document.getElementById("this_day").innerHTML = d.getDate();
+</script>
+  
+   <p> &copy; <em id="date2"></em>Olushore and Mr Bear</p>
 </div>
+<script>
+
+var test = todayDate();
+var test2 = document.getElementById("date2").innerHTML = test;
+
+   </script>
 
 </body>
+<script>
+
+var clickcount, pagePath2, array, totalClicks, pagePath3, pagePath4, item, pagePicker;
+
+function getNumberOrString(value) {
+  // Convert a string value to a number if possible
+  let number_value = Number(value);
+  if (Number.isNaN(number_value)) {
+    return value
+  } else {
+    return number_value
+  }
+}
+
+// Describe this function...
+function displayPageP3a() {
+  if(--window.LoopTrap <= 0) throw "Infinite loop.";
+  let element_pic = document.getElementById('pic');
+  element_pic.setAttribute("src", 'https://randomc.net/image/Shirokuma%20Cafe/Shirokuma%20Cafe%20-%2003%20-%20Large%2009.jpg');
+  let element_title2 = document.getElementById('title2');
+  element_title2.innerText = 'Chapter 2';
+  let element_p1 = document.getElementById('p1');
+  element_p1.innerText = 'Where is all the Salmon ?';
+  element_p1.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_p1a = document.getElementById('p1a');
+  element_p1a.innerText = "While he was travelling all he could think about was Salmon, he even stopped to get some honey just to tide him over. He was starving and the only thing that could satisfy his hunger was lots and lots of Salmon. He finally got to his favourite salmon shop but they were all out of salmon. He couldn't believe it, All the salmon was Sold out! What was he to do?";
+  element_p1a.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_p2 = document.getElementById('p2');
+  element_p2.innerText = "He tried the shop next door and the next shop and the next shop , he even tried supermarkets, all the Salmon was gone, even the fish cakes, even the Salmon flavoured crisps . Had all the Bears woken up at the same time? Yes! They always wake up at the same time, their Bears. It's never been like this since the great Salmon shortage of 2004. Would he have to settle for Mackerel, crab, prawns?....He thought he would get more honey before making any rash decisions.";
+  element_p2.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_ptest = document.getElementById('ptest');
+  element_ptest.innerText = 'page 3 a';
+}
+
+// Describe this function...
+function displayPageP3b() {
+  if(--window.LoopTrap <= 0) throw "Infinite loop.";
+  let element_pic2 = document.getElementById('pic');
+  element_pic2.setAttribute("src", 'https://e7.pngegg.com/pngimages/26/24/png-clipart-polar-bear-popsocket-grizzly-bear-mobile-phones-polar-bear-love-mammal.png');
+  let element_title22 = document.getElementById('title2');
+  element_title22.innerText = 'Chapter 2';
+  let element_p12 = document.getElementById('p1');
+  element_p12.innerText = 'I need a new H-phone.';
+  element_p12.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_p1a2 = document.getElementById('p1a');
+  element_p1a2.innerText = "when he finally got into town he played on his phone trying to load the app Salmon finder, a giraffe bumped into him and he dropped his phone, the screen cracked, which was a surprise to him as it was made of tiger glass, the strongest glass in the world. He had to get his phone fixed at a Banana store (one of the iconic tech stores from Banana inc, a global tech giant, not to be confused with actual giants like Giraffes. But I digress!), fortunately the nearest store was on the way to his favourite shop so he thought he would just get it out of the way before they raise the price.";
+  element_p1a2.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_p22 = document.getElementById('p2');
+  element_p22.innerText = "after getting his phone fixed all he could think of was all the Salmon he was going to eat, thoughts about stretching his legs and hunting evaporated, he could always do that later and for now he wanted, he needed lots of juicy oil filled meaty fresh Salmon. ";
+  element_p22.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_ptest2 = document.getElementById('ptest');
+  element_ptest2.innerText = 'page 3 b';
+}
+
+// Describe this function...
+function displayFrontC1() {
+  if(--window.LoopTrap <= 0) throw "Infinite loop.";
+  let element_PageTest = document.getElementById('PageTest');
+  element_PageTest.style.backgroundImage = "url(https://www.creativity103.com/collections/Paper/rustic_paper.jpg)";
+  let element_spacer = document.getElementById('spacer');
+  element_spacer.style.visibility = (false) ? 'visible' : 'hidden';
+  let element_title = document.getElementById('title');
+  element_title.innerText = 'THE TRAVELING BEAR';
+  let element_pic3 = document.getElementById('pic');
+  element_pic3.setAttribute("src", 'https://media.sciencephoto.com/c0/40/78/10/c0407810-800px-wm.jpg');
+  let element_p13 = document.getElementById('p1');
+  element_p13.innerText = '--------------';
+  element_p13.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_p1a3 = document.getElementById('p1a');
+  element_p1a3.innerText = 'By';
+  element_p1a3.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_title23 = document.getElementById('title2');
+  element_title23.innerText = 'There and back again: stories of a traveling bear';
+  let element_p23 = document.getElementById('p2');
+  element_p23.innerText = 'MR BEAR';
+  element_p23.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_price2 = document.getElementById('price2');
+  element_price2.innerText = '£9.99';
+  let element_spacer2 = document.getElementById('spacer2');
+  element_spacer2.style.visibility = (false) ? 'visible' : 'hidden';
+  let element_spacer3 = document.getElementById('spacer3');
+  element_spacer3.style.visibility = (false) ? 'visible' : 'hidden';
+  let element_ptest3 = document.getElementById('ptest');
+  element_ptest3.innerText = 'front cover (page 1)';
+  element_ptest3.style.visibility = (true) ? 'visible' : 'hidden';
+}
+
+// Describe this function...
+function page2() {
+  if(--window.LoopTrap <= 0) throw "Infinite loop.";
+  let element_PageTest2 = document.getElementById('PageTest');
+  element_PageTest2.style.backgroundColor = '#ffffcc';
+  let element_spacer4 = document.getElementById('spacer');
+  element_spacer4.style.visibility = (false) ? 'visible' : 'hidden';
+  let element_title3 = document.getElementById('title');
+  element_title3.innerText = 'THE TRAVELING BEAR';
+  let element_title24 = document.getElementById('title2');
+  element_title24.innerText = 'Chapter 1';
+  let element_price = document.getElementById('price');
+  element_price.style.visibility = (false) ? 'visible' : 'hidden';
+  let element_spacer22 = document.getElementById('spacer2');
+  element_spacer22.style.visibility = (false) ? 'visible' : 'hidden';
+  let element_spacer32 = document.getElementById('spacer3');
+  element_spacer32.style.visibility = (false) ? 'visible' : 'hidden';
+}
+
+// Describe this function...
+function displayPageP3c() {
+  if(--window.LoopTrap <= 0) throw "Infinite loop.";
+  let element_pic4 = document.getElementById('pic');
+  element_pic4.setAttribute("src", 'https://img.favpng.com/5/16/7/ice-cream-baby-polar-bear-giant-panda-png-favpng-nLNn5pYFJXJ81VUDsAu2SSZZ3.jpg');
+  let element_title25 = document.getElementById('title2');
+  element_title25.innerText = 'Chapter 2';
+  let element_p14 = document.getElementById('p1');
+  element_p14.innerText = 'All Benny, All Jerryy!';
+  element_p14.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_p1a4 = document.getElementById('p1a');
+  element_p1a4.innerText = "After travelling for an hour he arrived at Benny and Jerryy’s, He asked for 10 litres of his favourite flavour, Salmon, honey and butterscotch. The staff looked at him up and down and simply asked, what topping would you like. He only ever had one topping and that was honey, lots and lots of honey!, ";
+  element_p1a4.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_p24 = document.getElementById('p2');
+  element_p24.innerText = "When he had his fill he thought he should probably message his friends, as they will be wondering if he has woken up yet, he tried WhereApp but he needed to run a software update on his H-phone. He thought, one more 5 kg tub of ice cream then i'll update, and send messages.";
+  element_p24.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_ptest4 = document.getElementById('ptest');
+  element_ptest4.innerText = 'page 3 c';
+}
+
+// Describe this function...
+function displayPageP4b() {
+  if(--window.LoopTrap <= 0) throw "Infinite loop.";
+  let element_pic5 = document.getElementById('pic');
+  element_pic5.setAttribute("src", 'https://img1.ak.crunchyroll.com/i/spire1-tmb/ae6baca891168d026842fa0d5fecbcb91333523692_main.jpg');
+  let element_title26 = document.getElementById('title2');
+  element_title26.innerText = 'Chapter 3';
+  let element_p15 = document.getElementById('p1');
+  element_p15.innerText = 'Just one more please';
+  element_p15.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_p1a5 = document.getElementById('p1a');
+  element_p1a5.innerText = "After eating his fill and getting as much honey as he could consume, he could still feel the craving for more, he had been eating for hours and was looking more like Mr Bear. His friend the fantastic Ms Eagle had come to meet him and the honey shop was soon to close.";
+  element_p1a5.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_p25 = document.getElementById('p2');
+  element_p25.innerHTML = " <p> He thought he would ask for one more portion to tide him over till he got home. The staff were reluctant but after looking at his big bear eyes they said he could fill up a tub to take away but he had to use the self service machine. Mr bear was delighted, while the staff were closing up and cleaning the floor he was just filling away, thinking about eating more ice cream. <br> <br>“Hellooo” said the fantastic Ms Eagle. <br> <br>“Yes”  replied Mr Bear <br><br>“Your about to spill ice cream all over the counter” replied the Fantastic Ms Eagle <br> <br>“Good catch  ” replied Mr Bear <br> <br> Mr Bear realised there were only metal spoons…<br> <br> “Do you think they will notice if i take one, i’ll bring it back tomorrow” he asked The fantastic Ms Eagle <br> <br> “ No comment ” she replied <br>She had a feeling about these things but thought she would just see how this plays out.<br> <br> Mr Bear picked up a large tub of ice cream and balanced it in the palm of his paw while he reached over to get a spoon. The fantastic Ms Eagle glanced over while pretending to check messages on WhereApp. Mr Bear tipped toed to reach the cutlery as the staff had put it away, he stretched even further to  pick out a spoon between the tips of his claws. As the spoon was nearly out it “unexpectedly” pulled the whole tray of cutlery with it and as it fell Mr Bear fell off balance and the over filled tub of ice cream he had in his paw flew into the air. Time seemed to slow down as the tub spiralled backwards and the cutlery fell towards the floor.<br>The fantastic Ms Eagle slowly shook her head and got her camera ready to take a picture. After what seemed like forever, everything came crashing to the ground, the ice cream splat all over the floor and the cutlery as if on purpose dragged streaks of ice cream far and wide, all over the recently cleaned floor.<br> <br> The staff rushed in and the manager looked at the floor and then at Mr Bear lying flat on his back, ice cream in his fur, a spoon in between two claws and a blank look on his face.<br> <br> “Spoons are not for take away,” said the manager as she broke into laughter.  <br> <br> The fantastic ms Eagle coulndt help it but join in, while trying to keep her camera stable. Mr Bear broke into laughter while trying to explain he was going to bring it( the spoon ) back. <br> <br> After helping to clean up Mr Bear and the Fantastic Ms Eagle arrived at their friend tree house happy and ready to relax. </p>";
+  element_p25.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_ptest5 = document.getElementById('ptest');
+  element_ptest5.innerText = 'page 4 b';
+}
+
+// Describe this function...
+function displayPageP2a() {
+  if(--window.LoopTrap <= 0) throw "Infinite loop.";
+  let element_pic6 = document.getElementById('pic');
+  element_pic6.setAttribute("src", 'https://thumbs.dreamstime.com/b/cute-bear-eating-fish-illustration-49015800.jpg');
+  let element_p16 = document.getElementById('p1');
+  element_p16.innerText = 'To fish or not to fish!!';
+  element_p16.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_p1a6 = document.getElementById('p1a');
+  element_p1a6.innerText = "Mr bear woke up and was wondering what to do for the day. The night before was short but he had recently woken up from hibernating and fancied himself some fish and honey.";
+  element_p1a6.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_p26 = document.getElementById('p2');
+  element_p26.innerText = "He had what he thought was a sophisticated taste palate and loved some honey and salmon, he new a good place on the thames near london bridge but thought he should stretch his legs and practise his fishing skills after months of hibernating but he was also really craving some Benny and Jerryy’s. He thought it best to decide once he was out of the flat which was conveniently located in a cave. He got dressed and walked to the river boat.";
+  element_p26.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_ptest6 = document.getElementById('ptest');
+  element_ptest6.innerText = ' page 2a';
+  element_ptest6.style.visibility = (true) ? 'visible' : 'hidden';
+}
+
+// Describe this function...
+function displayPageP2b() {
+  if(--window.LoopTrap <= 0) throw "Infinite loop.";
+  let element_pic7 = document.getElementById('pic');
+  element_pic7.setAttribute("src", 'https://ti-content-global.cdn.turner.com/PROD-APAC/C_WEBEAR_0XXXX0227_REC_AFRICA/C_WEBEAR_0XXXX0227_REC_AFRICA_VIDSCREENSHOT.jpg');
+  let element_p17 = document.getElementById('p1');
+  element_p17.innerText = 'How long was I sleeping?';
+  element_p17.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_p1a7 = document.getElementById('p1a');
+  element_p1a7.innerText = "Mr bear woke up as he normally did after months of hibernating, he stretched his legs and walked to the bathroom, got some tree bark to clean his teeth, and as he looked in the mirror he could not believe what he saw.";
+  element_p1a7.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_p27 = document.getElementById('p2');
+  element_p27.innerText = " Had his alarm not gone off, had winter gone on longer than he expected? He had burned far more calories than expected, a few weeks more and he would have just been skin and bone. He looked at the fur hanging off him and thought this calls for a day at Benny and Jerryy’s and then some whole Salmon, with some sprincling of grass. After some time going back and forth between Salmon and ice cream, he still couldn't decide but He thought to himself, I need to do as little exercise as possible. He looked for his H-phone  and requested an Tuber. ";
+  element_p27.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_ptest7 = document.getElementById('ptest');
+  element_ptest7.innerText = 'page 2 b';
+}
+
+// Describe this function...
+function displayBackC5() {
+  if(--window.LoopTrap <= 0) throw "Infinite loop.";
+  displayFrontC1();
+  let element_pic9 = document.getElementById('pic');
+  element_pic9.style.visibility = (true) ? 'visible' : 'hidden';
+  element_pic9.setAttribute("src", 'https://images.fineartamerica.com/images-medium-large-5/drinking-grizzly-bear-black-and-white-steve-mckinzie.jpg');
+  let element_title27 = document.getElementById('title2');
+  element_title27.innerText = 'click "NEW JOURNEY" for a new story!!! ';
+  element_title27.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_p1a8 = document.getElementById('p1a');
+  element_p1a8.innerText = "This is a work of fiction. Names, characters, business, events and incidents are the products of the author's  (Mr Bear’s) imagination. Any resemblance to actual persons, living or dead, or actual events is purely coincidental.";
+  element_p1a8.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_price3 = document.getElementById('price');
+  element_price3.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_ptest8 = document.getElementById('ptest');
+  element_ptest8.innerText = 'back cover (page 5)';
+}
+
+// Describe this function...
+function displayPageP4a() {
+  if(--window.LoopTrap <= 0) throw "Infinite loop.";
+  let element_pic10 = document.getElementById('pic');
+  element_pic10.setAttribute("src", 'https://i.ytimg.com/vi/uhJmK-58z_s/maxresdefault.jpg');
+  let element_title28 = document.getElementById('title2');
+  element_title28.innerText = 'Chapter 3';
+  let element_p18 = document.getElementById('p1');
+  element_p18.innerText = 'Home sweet home';
+  element_p18.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_p1a9 = document.getElementById('p1a');
+  element_p1a9.innerText = "After eating his fill, he remembered he had more fish and honey in storage at home. He knew he would be hungry again soon and thought he could invite his friends round which would mean he wouldn't have to travel far at the end of the night .";
+  element_p1a9.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_p28 = document.getElementById('p2');
+  element_p28.innerText = "He sent out invites on WhereApp, got the bus home, and freshened up for the party.";
+  element_p28.style.visibility = (true) ? 'visible' : 'hidden';
+  let element_ptest9 = document.getElementById('ptest');
+  element_ptest9.innerText = 'page 4 a';
+}
+
+function randomInt(n) {
+  // Return a random number from in [0, n[
+  return Math.floor(Math.random()*n);
+}
+
+function randomMember(arr) {
+  // Return a random member of the array
+  return arr[randomInt(arr.length)]
+}
+
+
+
+document.getElementById('addComment').addEventListener('click', (event) => {
+  array.push(getNumberOrString(document.getElementById('addtext').value));
+  let element_comment_list = document.getElementById('comment-list');
+  element_comment_list.replaceChildren();
+  array.forEach((item) => {
+    let new_li = document.createElement('li');
+    new_li.innerText = item;
+
+    element_comment_list.appendChild(new_li);
+  });
+
+});
+
+document.getElementById('remComment').addEventListener('click', (event) => {
+  array.pop();
+  let element_comment_list2 = document.getElementById('comment-list');
+  element_comment_list2.replaceChildren();
+  array.forEach((item) => {
+    let new_li2 = document.createElement('li');
+    new_li2.innerText = item;
+
+    element_comment_list2.appendChild(new_li2);
+  });
+
+});
+
+document.getElementById('button3').addEventListener('click', (event) => {
+  clickcount = 0;
+  displayFrontC1();
+  let element_pic8 = document.getElementById('pic');
+  element_pic8.style.visibility = (true) ? 'visible' : 'hidden';
+
+});
+displayFrontC1();
+
+clickcount = 0;
+pagePath2 = ['page2a', 'page2b'];
+pagePath3 = ['page3a', 'page3b', 'page3c'];
+pagePath4 = ['page4a', 'page4b'];
+array = [];
+
+
+document.getElementById('button').addEventListener('click', (event) => {
+  event.target.innerText = 'Turn the page ';
+  clickcount = (typeof clickcount === 'number' ? clickcount : 0) + 1;
+  totalClicks = clickcount;
+  let element_button2 = document.getElementById('button2');
+  element_button2.innerText = totalClicks;
+  if (totalClicks >= 5) {
+    displayFrontC1();
+    let element_pic11 = document.getElementById('pic');
+    element_pic11.style.visibility = (true) ? 'visible' : 'hidden';
+    let element_p1aA1 = document.getElementById('p1a');
+    element_p1aA1.style.textAlign = "center";
+  } else {
+    if (totalClicks == 4) {
+      displayBackC5();
+    } else if (totalClicks == 3) {
+      pagePicker = randomMember(pagePath4);
+      if (pagePicker == 'page4a') {
+        displayPageP4a();
+      } else {
+        displayPageP4b();
+      }
+    } else if (totalClicks == 2) {
+      pagePicker = randomMember(pagePath3);
+      if (pagePicker == 'page3a') {
+        displayPageP3a();
+      } else if (pagePicker == 'page3b') {
+        displayPageP3b();
+      } else {
+        displayPageP3c();
+      }
+    } else if (totalClicks == 1) {
+      pagePicker = randomMember(pagePath2);
+      if (pagePicker == 'page2a') {
+        page2();
+        displayPageP2a();
+      } else {
+        page2();
+        displayPageP2b();
+      }
+    }
+  }
+
+});
+
+</script>
+
 </html>
