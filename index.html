@@ -234,7 +234,8 @@ function displayBackC5() {
   if(--window.LoopTrap <= 0) throw "Infinite loop.";
   displayFrontC1();
   let element_pic9 = document.getElementById('pic');
-  element_pic9.style.visibility = (false) ? 'visible' : 'hidden';
+  element_pic9.style.visibility = (true) ? 'visible' : 'hidden';
+  element_pic9.setAttribute("src", 'https://images.fineartamerica.com/images-medium-large-5/drinking-grizzly-bear-black-and-white-steve-mckinzie.jpg');
   let element_title27 = document.getElementById('title2');
   element_title27.innerText = 'click "NEW JOURNEY" for a new story!!! ';
   element_title27.style.visibility = (true) ? 'visible' : 'hidden';
